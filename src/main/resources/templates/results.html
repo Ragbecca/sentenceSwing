@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <h1>Hello, this is your sentence</h1>
+    <p th:text="${sentence}"></p>
+    <table>
+        <tr>
+            <td>Amount of Characters:</td>
+            <td th:text="*{charactersAmount}"></td>
+        </tr>
+        <tr>
+            <td>Amount of Words:</td>
+            <td th:text="*{wordsAmount}"></td>
+        </tr>
+        <tr>
+            <td>Amount of Vowels:</td>
+            <td th:text="*{vowelsAmount}"></td>
+        </tr>
+        <tr>
+            <td>Palindroom:</td>
+            <td th:text="*{checkPalindroom}"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td th:text="*{amountA}"></td>
+            <td th:text="*{amountB}"></td>
+            <td th:text="*{amountC}"></td>
+            <td th:text="*{amountD}"></td>
+            <td th:text="*{amountE}"></td>
+            <td th:text="*{amountF}"></td>
+            <td th:text="*{amountG}"></td>
+            <td th:text="*{amountH}"></td>
+            <td th:text="*{amountI}"></td>
+            <td th:text="*{amountJ}"></td>
+            <td th:text="*{amountK}"></td>
+            <td th:text="*{amountL}"></td>
+            <td th:text="*{amountM}"></td>
+            <td th:text="*{amountN}"></td>
+            <td th:text="*{amountO}"></td>
+            <td th:text="*{amountP}"></td>
+            <td th:text="*{amountQ}"></td>
+            <td th:text="*{amountR}"></td>
+            <td th:text="*{amountS}"></td>
+            <td th:text="*{amountT}"></td>
+            <td th:text="*{amountU}"></td>
+            <td th:text="*{amountV}"></td>
+            <td th:text="*{amountW}"></td>
+            <td th:text="*{amountX}"></td>
+            <td th:text="*{amountY}"></td>
+            <td th:text="*{amountZ}"></td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+            <td>M</td>
+            <td>N</td>
+            <td>O</td>
+            <td>P</td>
+            <td>Q</td>
+            <td>R</td>
+            <td>S</td>
+            <td>T</td>
+            <td>U</td>
+            <td>V</td>
+            <td>W</td>
+            <td>X</td>
+            <td>Y</td>
+            <td>Z</td>
+        </tr>
+    </table>
+    <p>Fill in a new <a href="/sentence">sentence</a></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Fill in a sentence to be calculated</h1>
+<form action="#" th:action="@{/sentence}" th:object="${sentenceForm}" method="post">
+    <table>
+        <tr>
+            <td>Sentence:</td>
+            <td><input type="text" th:field="*{sentence}" /></td>
+            <td th:if="${#fields.hasErrors('sentence')}" th:errors="*{sentence}">Sentence Error</td>
+        </tr>
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
